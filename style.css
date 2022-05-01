@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(./images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dock-container {
+  height: 16vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.dock-container .dock {
+  height: 10vh;
+  width: 84%;
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 2.6vh;
+}
+
+.dock-container .dock .icons {
+  width: 480px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.dock-container .dock .icons .app-icons {
+  -webkit-transition: height 0.4s ease, margin 0.4s ease;
+  transition: height 0.4s ease, margin 0.4s ease;
+  height: 100%;
+  margin: 0 5px;
+}
+
+.dock-container .dock .icons .app-icons:hover {
+  height: 120%;
+  margin: 0 10px 20px 10px;
+}
+/*# sourceMappingURL=style.css.map */
